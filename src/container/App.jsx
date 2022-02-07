@@ -18,7 +18,7 @@ function App() {
         <div className="App ">
           <NavBar />
 
-          <Title title="JMComputacion" />
+          <Title title="Coder Hardware" />
 
           <Switch>
             <Route component={ItemListContainer} exact path="/" />

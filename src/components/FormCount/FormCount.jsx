@@ -1,6 +1,7 @@
 import { useState } from "react";
 import firebase from "firebase";
 import "firebase/firestore";
+import '../../style/App.css'
 import { getFirestore } from "../../services/getFirebase";
 import { useCartContext } from "../../Context/CartContext";
 
@@ -79,8 +80,8 @@ const FormCount = () => {
             });
         });
     };
-    return <div className="col-8 mt-4 m-auto bg-dark p-2 mb-4" >
-        <form onChange={handleOnChange} onSubmit={handleOnSubmit}>
+    return <div className=" formulario col-8 mt-4 m-auto  p-2 mb-4" >
+        <form className="formulario" onChange={handleOnChange} onSubmit={handleOnSubmit}>
             <input class="form-control mb-1" type='text'
                 placeholder='ingrese el nombre'
                 name='name'
@@ -101,7 +102,7 @@ const FormCount = () => {
                 placeholder='Confirme el mail '
                 name='email2'
             />
-            <button class="btn btn-info mt-1"
+            <button class="botoncitos btn btn-info mt-1"
 
             >Terminar Compra</button>
         </form>

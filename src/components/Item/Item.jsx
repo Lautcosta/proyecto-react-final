@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../../style/App.css'
 
 const Item = ({product}) => {
     return (
         <div className="col-12 col-sm-12 col-md-6 col-lg-4">
 
-            <div key={product.id} className="card  mt-3 mb-3 m-auto  ">
+            <div key={product.id} className="card mt-3 mb-3 m-auto cardItem  ">
                         <div className="card-header">
                             <h5 className="card-title text-center">{product.title}</h5>
                         </div>

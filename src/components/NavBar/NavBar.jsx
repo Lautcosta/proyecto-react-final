@@ -16,16 +16,16 @@ const NavBar = () => {
 
   return (
 
-    <Navbar bg="dark" expand="lg" className="navbar-dark  fixed-top">
+    <Navbar  expand="lg" className="navbar-moradita  fixed-top">
     <Container>
         
       <Navbar.Brand >
-        <Link className="link" to={`/`}>JMComputacion</Link>
+        <Link className="link" to={`/`}>Coder Hardware</Link>
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="m-auto">
+        <Nav className="m-auto text-center">
               <Nav.Link>
 
             <Link className="link" to={`/category/gabinete`}>
@@ -42,26 +42,30 @@ const NavBar = () => {
               <Link className="link" to={`/category/procesadores`}>Procesadores</Link>
             </Nav.Link>
           
-          <NavDropdown title="Perifericos" id="basic-nav-dropdown">
-
-                <NavDropdown.Item >
-                  <Link className="link" to={`/category/teclado`}>Teclado</Link>
-                </NavDropdown.Item>
-              
-              <NavDropdown.Item >
-                  <Link className="link" to={`/category/mouse`}>Mouse</Link>
-              </NavDropdown.Item>
-
-                <NavDropdown.Item >
-                  <Link className="link" to={`/category/auricular`}>Auricular</Link>
-                </NavDropdown.Item>
-          </NavDropdown>
+          
           <Nav.Link >
               <Link className="link" to="/category/monitor">Monitores</Link>
           </Nav.Link>
+
+          {/* ----------Dropdown-------- */}
+          <NavDropdown className="link2" title="Perifericos" id="basic-nav-dropdown">
+
+                <NavDropdown.Item >
+                  <Link className="link2" to={`/category/teclado`}>Teclado</Link>
+                </NavDropdown.Item>
+              
+              <NavDropdown.Item >
+                  <Link className="link2" to={`/category/mouse`}>Mouse</Link>
+              </NavDropdown.Item>
+
+                <NavDropdown.Item >
+                  <Link className="link2" to={`/category/auricular`}>Auricular</Link>
+                </NavDropdown.Item>
+          </NavDropdown>
           
         </Nav>
       </Navbar.Collapse>
+
     </Container>
       <Link  className="link" exact to={'/cart' }>
         <div className="text-center ">
