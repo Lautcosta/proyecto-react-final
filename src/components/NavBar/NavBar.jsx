@@ -29,7 +29,7 @@ const NavBar = () => {
               <Nav.Link>
 
             <Link className="link" to={`/category/gabinete`}>
-              Gabinete
+              Gabinetee
             </Link>
               </Nav.Link>
           
