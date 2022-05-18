@@ -18,7 +18,7 @@ function App() {
         <div className="App ">
           <NavBar />
 
-          <Title title="Coder Hardware" />
+          <Title title="Coder Hardwareeeee" />
 
           <Switch>
             <Route component={ItemListContainer} exact path="/" />
